@@ -15,9 +15,16 @@ public class CuentaBancaria {
 
     }
 
+    public float retirar(float cantidadRetirar){
+        float saldoTotal=saldo-cantidadRetirar;
+        return  saldoTotal;
+    }
+
     public void cantidadDepostada(){
         System.out.println("la saldo total de la cuenta es de ");
     }
+
+
 
 
 

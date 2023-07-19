@@ -10,10 +10,17 @@ public class Main {
 
         switch (aceptar){
             case "depositar":
-            int cantidadDepostiar=Integer.parseInt(JOptionPane.showInputDialog("INGRESE LA CANTIDAD A DEPOSITAR"));
+            float cantidadDepostiar=Float.parseFloat(JOptionPane.showInputDialog("INGRESE LA CANTIDAD A DEPOSITAR"));
             System.out.println("el saldo despues de depositar es de "+op.depositar(cantidadDepostiar));
+            break;
+
+            case "retirar":
+            float cantidadRetirar=Float.parseFloat(JOptionPane.showInputDialog("INGRESE LA CANTIDAD A RETIRAR"));
+                System.out.println("el saldo despues de depositar es de "+op.retirar(cantidadRetirar));
 
         }
+
+
 
     }
 }
