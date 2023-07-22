@@ -1,27 +1,27 @@
 public class CuentaBancaria {
 
     String numeroCuenta;
-    float saldo;
+    double saldo;
 
-    public CuentaBancaria(String numeroCuenta, float saldo){
+    public CuentaBancaria(String numeroCuenta, double saldo){
         this.numeroCuenta=numeroCuenta;
         this.saldo=saldo;
     }
 
 
-    public float depositar(float cantidadDepostiar){
-        float cantidadTotal=cantidadDepostiar+saldo;
-        return cantidadTotal;
+    public double depositar(float cantidadDepostiar){
+        saldo+=cantidadDepostiar;
+        return saldo;
 
     }
 
-    public float retirar(float cantidadRetirar){
-        float saldoTotal=saldo-cantidadRetirar;
-        return  saldoTotal;
+    public double retirar(float cantidadRetirar){
+        saldo=saldo-cantidadRetirar;
+        return  saldo;
     }
 
-    public void cantidadDepostada(){
-        System.out.println("la saldo total de la cuenta es de ");
+    public double obtenerSaldo(){
+        return saldo;
     }
 
 
